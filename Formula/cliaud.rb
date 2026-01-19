@@ -1,9 +1,9 @@
 class Cliaud < Formula
   desc "CLI audio output switcher + hotkey agent for macOS"
   homepage "https://github.com/Swas26/CliAud"
-  url "https://github.com/Swas26/CliAud/archive/refs/tags/v0.1.1.tar.gz"
+  url "https://github.com/Swas26/CliAud/archive/refs/tags/v0.1.2.tar.gz"
 
-  sha256 "c98ba1d3bba45d47e52a753c19f792288b81ec0612cb1a51b666c4ecce8ff59b"
+  sha256 "b325e465280927413e4670c618859f5f9eebb00a9bee81bed4e5a6cbf0c5f2ff"
 
   license "MIT"
 
