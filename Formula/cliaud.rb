@@ -1,9 +1,9 @@
 class Cliaud < Formula
   desc "CLI audio output switcher + hotkey agent for macOS"
-  homepage "https://github.com/Swas26/cliaud"
-  url "https://github.com/Swas26/cliaud/archive/refs/tags/v0.1.0.tar.gz"
+  homepage "https://github.com/Swas26/CliAud"
+  url "https://github.com/Swas26/CliAud/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "c98ba1d3bba45d47e52a753c19f792288b81ec0612cb1a51b666c4ecce8ff59b"
 
-  sha256 "693b0718299e2e530bf21bae0e8c5c780c2545f1b6659f779d3e1416292d8cca"
   license "MIT"
 
   depends_on :macos
@@ -21,9 +21,11 @@ class Cliaud < Formula
   service do
     run [opt_bin/"cliaud-agent"]
     keep_alive true
+    environment_variables PATH: "/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     log_path var/"log/cliaud-agent.log"
     error_log_path var/"log/cliaud-agent.err.log"
-  end
+   end
+
 
   def caveats
     <<~EOS
